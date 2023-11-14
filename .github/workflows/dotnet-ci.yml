@@ -17,6 +17,7 @@ jobs:
 
     - name: Restore dependencies, build and test
       run: |
+        cd OtusQuadraticSolverTEST
         dotnet restore
         dotnet build --no-restore
         dotnet test --no-build --verbosity normal
